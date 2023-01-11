@@ -1,0 +1,12 @@
+.card{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    color:#384047;
+    width: 300px;
+}
+
+.img-product{
+    width: 200px;
+    align-self: center;
+    padding-bottom: 10px;
+}
