@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import Loading from '../../pages/Loading';
 import { getProduct } from '../../services/mockService'
 import ItemDetail from './ItemDetail'
 
 export default function ItemDetailContainer() {
-    const [product, setProduct] = useState([]);
+    const [product, setProduct] = useState({});
+    const [loading, setLoading] = useState(true)
     let {id} = useParams();
 
     useEffect(() => {
@@ -14,19 +16,16 @@ export default function ItemDetailContainer() {
             console.log("product:", product);
         }).catch((error) => {
             alert(error);
-        })
-    });
+        }).finally( () => setLoading(false))
+    }, [id]);
 
-    if(product === []){
-        return (
-            <h1>Still loading...</h1>
-            
-        )
-    }
-    else {
-        return (
-            <h1>item detail</h1>
-            /*<ItemDetail product={product} />*/
-        )
-    }
+    return (
+        <>
+        {loading ?
+            <Loading/>
+        :
+            <ItemDetail product={product} />
+        }
+        </>
+    )
 }

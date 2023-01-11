@@ -18,8 +18,6 @@ export default function ItemListContainer(){
                 setProducts(response);
               }).catch((error) => alert(error));
         }
-
-        return () => console.log("Desmontamos ILC"); /* efecto cuando desmontamos el componente */
     }, [categoryid]);
 
     return (
