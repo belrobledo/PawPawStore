@@ -1,6 +1,6 @@
 [
     {
-        "id": "1",
+        "id": 1,
         "name": "Rascador para gatos - CanCat",
         "price": 25000,
         "category": "Gatos",
@@ -9,7 +9,7 @@
         "detail": ""
     },
     {
-        "id": "2",
+        "id": 2,
         "name": "Juguete circuito azul - Catit",
         "price": 3971,
         "category": "Gatos",
@@ -18,7 +18,7 @@
         "detail": ""
     },
     {
-        "id": "3",
+        "id": 3,
         "name": "Juguete para perro Hueso Dental - FerPlast",
         "price": 4420,
         "category": "Perros",
@@ -27,7 +27,7 @@
         "detail": ""
     },
     {
-        "id": "4",
+        "id": 4,
         "name": "Juguete para perro Peluche Koala c/sonido - Gigwi",
         "price": 5320,
         "category": "Perros",
@@ -36,7 +36,7 @@
         "detail": ""
     },
     {
-        "id": "5",
+        "id": 5,
         "name": "Excellent para Gatos Adultos x 3kg",
         "price": 3110,
         "category": "Gatos",
@@ -45,7 +45,7 @@
         "detail": ""
     },
     {
-        "id": "6",
+        "id": 6,
         "name": "Royal Canin mini Adultos x 7,5kg",
         "price": 8126,
         "category": "Perros",
@@ -54,7 +54,7 @@
         "detail": ""
     },
     {
-        "id": "7",
+        "id": 7,
         "name": "Old Prince Novel cordero y arroz Perro adulto x 7,5kg",
         "price": 4620,
         "category": "Perros",
@@ -63,7 +63,7 @@
         "detail": ""
     },
     {
-        "id": "8",
+        "id": 8,
         "name": "Pouch Pedigree cachorro carne en salsa x 85gr",
         "price": 134,
         "category": "Perros",
@@ -72,7 +72,7 @@
         "detail": ""
     },
     {
-        "id": "9",
+        "id": 9,
         "name": "Pouch ProPlan wet dog adult Active Mind x 100gr",
         "price": 225,
         "category": "Perros",
@@ -81,7 +81,7 @@
         "detail": ""
     },
     {
-        "id": "10",
+        "id": 10,
         "name": "Royal Canin para Gato castrado Weigh Control x 7,5kg",
         "price": 12862,
         "category": "Gatos",
@@ -90,7 +90,7 @@
         "detail": ""
     },
     {
-        "id": "11",
+        "id": 11,
         "name": "VitalCan Balanced gato adulto x 7,5kg",
         "price": 6204,
         "category": "Gatos",
@@ -99,7 +99,7 @@
         "detail": ""
     },
     {
-        "id": "12",
+        "id": 12,
         "name": "Piedras sanitarias Silica pack familiar economico x 7,6L",
         "price": 4914,
         "category": "Gatos",
@@ -108,7 +108,7 @@
         "detail": ""
     },
     {
-        "id": "13",
+        "id": 13,
         "name": "Pecera Marina Deluxe AQ.Kit 38L",
         "price": 39913,
         "category": "Peces",
@@ -117,7 +117,7 @@
         "detail": ""
     },
     {
-        "id": "14",
+        "id": 14,
         "name": "Alimento para Peces Tropicales tetra min x 200gr",
         "price": 8653,
         "category": "Peces",
@@ -126,7 +126,7 @@
         "detail": ""
     },
     {
-        "id": "15",
+        "id": 15,
         "name": "ProPlan para Perro adulto pequeño x 3kg + DentalLife",
         "price": 4224,
         "category": "Perros",
@@ -135,7 +135,7 @@
         "detail": ""
     },
     {
-        "id": "16",
+        "id": 16,
         "name": "Cama rectangular small con corderito azul y crema - Dogit",
         "price": 6958,
         "category": "Perros",
@@ -144,7 +144,7 @@
         "detail": ""
     },
     {
-        "id": "17",
+        "id": 17,
         "name": "Cama rectangular mediana con corderito gris - Dogit",
         "price": 10956,
         "category": "Perros",
@@ -153,7 +153,7 @@
         "detail": ""
     },
     {
-        "id": "18",
+        "id": 18,
         "name": "Bebedero automatico para Gato fuente flor 3L - Catit",
         "price": 10136,
         "category": "Gatos",
@@ -162,7 +162,7 @@
         "detail": ""
     },
     {
-        "id": "19",
+        "id": 19,
         "name": "Tunel para Gato azul 68x97x28cm - Catit",
         "price": 8317,
         "category": "Gatos",
@@ -171,7 +171,7 @@
         "detail": ""
     },
     {
-        "id": "20",
+        "id": 20,
         "name": "Alimentador automatico para Peces con pantalla LCD - Eheim",
         "price": 20119,
         "category": "Peces",
@@ -180,7 +180,7 @@
         "detail": ""
     },
     {
-        "id": "21",
+        "id": 21,
         "name": "Filtro interno para pecera UIV 880 L/H - SOBO",
         "price": 20119,
         "category": "Peces",
@@ -189,7 +189,7 @@
         "detail": ""
     },
     {
-        "id": "22",
+        "id": 22,
         "name": "Adorno para Pecera naufragio pirata 39x15x31cm",
         "price": 20592,
         "category": "Peces",
@@ -198,7 +198,7 @@
         "detail": ""
     },
     {
-        "id": "23",
+        "id": 23,
         "name": "Alimento para Peces marinos Tetra Marine XL x 225gr",
         "price": 7315,
         "category": "Peces",
@@ -207,7 +207,7 @@
         "detail": ""
     },
     {
-        "id": "24",
+        "id": 24,
         "name": "Rascador para Gato poste - Zootec",
         "price": 4309,
         "category": "Gatos",
@@ -216,7 +216,7 @@
         "detail": ""
     },
     {
-        "id": "25",
+        "id": 25,
         "name": "Rascador para Gatos carton infinit",
         "price": 5128,
         "category": "Gatos",
@@ -225,7 +225,7 @@
         "detail": ""
     },
     {
-        "id": "26",
+        "id": 26,
         "name": "Cucha mediana gris + almohadon - Eggys",
         "price": 18496,
         "category": "Perros",
@@ -234,7 +234,7 @@
         "detail": ""
     },
     {
-        "id": "27",
+        "id": 27,
         "name": "Pechera perro arnes tela camuflada talle 6",
         "price": 6988,
         "category": "Perros",
@@ -243,7 +243,7 @@
         "detail": ""
     },
     {
-        "id": "28",
+        "id": 28,
         "name": "Correa extensible L 5m - New Confort",
         "price": 8790,
         "category": "Perros",
@@ -252,7 +252,7 @@
         "detail": ""
     },
     {
-        "id": "29",
+        "id": 29,
         "name": "Cuna ventana para Gato",
         "price": 10714,
         "category": "Gatos",
@@ -261,7 +261,7 @@
         "detail": ""
     },
     {
-        "id": "30",
+        "id": 30,
         "name": "Comedero interactivo laberinto dispensador - Catit",
         "price": 7823,
         "category": "Gatos",
