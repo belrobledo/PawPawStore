@@ -1,0 +1,16 @@
+.navbar-logo{
+    position: relative;
+}
+
+.navbar-logo:hover{
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+
+    -webkit-transition: transform 0.11s ease-in-out;
+    -moz-transition:transform 0.11s ease-in-out;
+    -ms-transition:transform 0.11s ease-in-out;
+}

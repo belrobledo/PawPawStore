@@ -4,8 +4,10 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import NotFound from './pages/NotFound';
-import Home from './pages/Home';
+
+import ErrorPage from './pages/ErrorPage';
+import LandingPage from './pages/LandingPage';
+
 import { CartProvider } from './storage/cartContext';
 
 
@@ -16,10 +18,10 @@ function App() {
         <BrowserRouter>
           <NavBar/>
           <Routes>
-            <Route path="/" element={ <Home/> } />
+            <Route path="/" element={ <LandingPage/> } />
             <Route path="/detail/:id" element={ <ItemDetailContainer/> } />
             <Route path="/category/:categoryid" element={ <ItemListContainer/> } />
-            <Route path="*" element={ <NotFound/> } />
+            <Route path="*" element={ <ErrorPage/> } />
           </Routes>
         </BrowserRouter>
       </CartProvider>

@@ -1,8 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Loading from '../../pages/Loading';
 import { getProduct } from '../../services/mockService'
 import { cartContext } from '../../storage/cartContext';
+import BreadCrumb from '../BreadCrumb/BreadCrumb';
+import Loader from '../Loader/Loader';
 import ItemDetail from './ItemDetail'
 
 export default function ItemDetailContainer() {
@@ -27,8 +28,10 @@ export default function ItemDetailContainer() {
 
     return (
         <>
+        <BreadCrumb currentPage="Detail" />
+
         {loading ?
-            <Loading/>
+            <Loader/>
         :
             <ItemDetail product={product} onAddToCart={handleAddToCart}/>
         }

@@ -2,8 +2,9 @@ import {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 
 import getAllProducts, { getProductsByCategory } from '../../services/mockService'
+import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import Card from "../Card/Card"
-import Loading from "../../pages/Loading";
+import Loader from "../Loader/Loader";
 
 export default function ItemListContainer(){
     const [products, setProducts] = useState([]);
@@ -11,7 +12,8 @@ export default function ItemListContainer(){
     let {categoryid} = useParams();
 
     useEffect(() => {
-        if(!categoryid){
+        setLoading(true);
+        if(categoryid === "All"){
             getAllProducts().then((response) => {
                 setProducts(response);
               }).catch((error) => alert(error)
@@ -26,8 +28,10 @@ export default function ItemListContainer(){
 
     return (
         <>
+        <BreadCrumb currentPage={categoryid}/>
+
         {loading ?
-            <Loading/>
+            <Loader/>
         :
             <div>
                 <div className="container">

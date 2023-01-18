@@ -5,7 +5,7 @@ import NavBarSearch from "./NavBarSearch";
 
 export default function NavBar(props){
     return (
-        <nav className="navbar navbar-expand-lg navbar-primary bg-primary p-3 sticky-top shadow-sm">
+        <nav className="navbar navbar-expand-lg navbar-primary bg-primary p-3 mb-1 sticky-top shadow-sm">
             <div className="container">
                 <NavBarLogo/>
 

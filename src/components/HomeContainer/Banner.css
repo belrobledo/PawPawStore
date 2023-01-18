@@ -1,0 +1,89 @@
+.textbanner{
+    position: relative;
+    overflow: hidden;
+    height: calc(100vh - 130px);
+    transition: all 0.8 ease;
+    cursor: pointer;
+    font-size: 250%;
+}
+
+.textbanner.mid{
+    height: calc(50vh - 81px);
+}
+
+#bannerProductos{
+    background: url(/public/img/bannerProductos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bannerGatos{
+    background: url(/public/img/bannerGatos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bannerPerros{
+    background: url(/public/img/bannerPerros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bannerPeces{
+    background: url(/public/img/bannerPeces.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img{
+    opacity: 0.9;
+}
+
+.img:hover{
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    transform: scale(1.02);
+
+    -o-transition: all;
+    -webkit-transition: transform 0.3s ease-in-out;
+    -moz-transition:transform 0.3s ease-in-out;
+    -ms-transition:transform 0.3s ease-in-out;
+}
+
+.textbanner-text{
+    position: absolute;
+    text-align: center;
+    top: 35%;
+    width: 100%;
+}
+
+.textbanner-title{
+    font-size: 1.4em;
+}
+
+.textbanner-button{
+    position: absolute;
+    top: 80%;
+    translate: -104px;
+}
+
+.textbanner-button:hover{
+    opacity: 0.8;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(216, 216, 216);
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}

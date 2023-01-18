@@ -13,7 +13,7 @@ export default function ItemDetail({product, onAddToCart}) {
   }
 
   return (
-    <div className="container my-3">
+    <div className="container my-1">
       <div className='row item-detail'>
         <div className='col-sm-12 col-md-5'>
           <img className="img-fluid" src={imgurl} alt={name}/>
