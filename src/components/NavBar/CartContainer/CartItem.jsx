@@ -14,6 +14,7 @@ export default function CartItem({product}) {
             <p className="card-cart-text my-auto">Cantidad: {quantity}</p>
             <p className="card-cart-text my-auto">Precio/u: ${price.toLocaleString()}</p>
         </div>
+        <span className='w-auto mx-1 position-absolute end-0 bottom-0 btn-delete-product'><h4>x</h4></span>
     </div>
   )
 }

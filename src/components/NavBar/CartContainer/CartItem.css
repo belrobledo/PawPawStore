@@ -8,3 +8,13 @@
     width: 100px;
     align-self: left;
 }
+
+.btn-delete-product:hover{
+    scale: 110%;
+    cursor: pointer;
+}
+
+.btn-delete-product:active{
+    scale: 100%;
+    cursor: pointer;
+}
