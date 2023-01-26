@@ -12,3 +12,14 @@
     background-color: #434a50;
     color: #f8f9fa;
 }
+
+.offcanvas-cart{
+    width: 450px;
+    min-width: 450px;
+}
+
+.offcanvas-cart-bg{
+    background-color: #7FBCD2;
+    --bs-body-bg: #7FBCD2;
+    color: #f8f9fa;
+}

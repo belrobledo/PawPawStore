@@ -1,0 +1,10 @@
+.card-cart{
+    border-radius: 10px;
+    color:#384047e5;
+    background-color: #eff3f7c7;
+}
+
+.card-cart-img{
+    width: 100px;
+    align-self: left;
+}
