@@ -4,7 +4,7 @@
         "name": "Rascador para gatos - CanCat",
         "price": 25000,
         "category": "Gatos",
-        "stock": "24",
+        "stock": 24,
         "imgurl": "/img/products/product1.webp",
         "detail": ""
     },
@@ -13,7 +13,7 @@
         "name": "Juguete circuito azul - Catit",
         "price": 3971,
         "category": "Gatos",
-        "stock": "30",
+        "stock": 30,
         "imgurl": "/img/products/product2.webp",
         "detail": ""
     },
@@ -22,7 +22,7 @@
         "name": "Juguete para perro Hueso Dental - FerPlast",
         "price": 4420,
         "category": "Perros",
-        "stock": "4",
+        "stock": 4,
         "imgurl": "/img/products/product3.webp",
         "detail": ""
     },
@@ -31,7 +31,7 @@
         "name": "Juguete para perro Peluche Koala c/sonido - Gigwi",
         "price": 5320,
         "category": "Perros",
-        "stock": "5",
+        "stock": 5,
         "imgurl": "/img/products/product4.webp",
         "detail": ""
     },
@@ -40,7 +40,7 @@
         "name": "Excellent para Gatos Adultos x 3kg",
         "price": 3110,
         "category": "Gatos",
-        "stock": "47",
+        "stock": 47,
         "imgurl": "/img/products/product5.webp",
         "detail": ""
     },
@@ -49,7 +49,7 @@
         "name": "Royal Canin mini Adultos x 7,5kg",
         "price": 8126,
         "category": "Perros",
-        "stock": "86",
+        "stock": 86,
         "imgurl": "/img/products/product6.webp",
         "detail": ""
     },
@@ -58,7 +58,7 @@
         "name": "Old Prince Novel cordero y arroz Perro adulto x 7,5kg",
         "price": 4620,
         "category": "Perros",
-        "stock": "91",
+        "stock": 91,
         "imgurl": "/img/products/product7.webp",
         "detail": ""
     },
@@ -67,7 +67,7 @@
         "name": "Pouch Pedigree cachorro carne en salsa x 85gr",
         "price": 134,
         "category": "Perros",
-        "stock": "113",
+        "stock": 113,
         "imgurl": "/img/products/product8.webp",
         "detail": ""
     },
@@ -76,7 +76,7 @@
         "name": "Pouch ProPlan wet dog adult Active Mind x 100gr",
         "price": 225,
         "category": "Perros",
-        "stock": "17",
+        "stock": 17,
         "imgurl": "/img/products/product9.webp",
         "detail": ""
     },
@@ -85,7 +85,7 @@
         "name": "Royal Canin para Gato castrado Weigh Control x 7,5kg",
         "price": 12862,
         "category": "Gatos",
-        "stock": "35",
+        "stock": 35,
         "imgurl": "/img/products/product10.webp",
         "detail": ""
     },
@@ -94,7 +94,7 @@
         "name": "VitalCan Balanced gato adulto x 7,5kg",
         "price": 6204,
         "category": "Gatos",
-        "stock": "27",
+        "stock": 27,
         "imgurl": "/img/products/product11.webp",
         "detail": ""
     },
@@ -103,7 +103,7 @@
         "name": "Piedras sanitarias Silica pack familiar economico x 7,6L",
         "price": 4914,
         "category": "Gatos",
-        "stock": "18",
+        "stock": 18,
         "imgurl": "/img/products/product12.webp",
         "detail": ""
     },
@@ -112,7 +112,7 @@
         "name": "Pecera Marina Deluxe AQ.Kit 38L",
         "price": 39913,
         "category": "Peces",
-        "stock": "3",
+        "stock": 3,
         "imgurl": "/img/products/product13.webp",
         "detail": ""
     },
@@ -121,7 +121,7 @@
         "name": "Alimento para Peces Tropicales tetra min x 200gr",
         "price": 8653,
         "category": "Peces",
-        "stock": "40",
+        "stock": 40,
         "imgurl": "/img/products/product14.webp",
         "detail": ""
     },
@@ -130,7 +130,7 @@
         "name": "ProPlan para Perro adulto pequeño x 3kg + DentalLife",
         "price": 4224,
         "category": "Perros",
-        "stock": "29",
+        "stock": 29,
         "imgurl": "/img/products/product15.webp",
         "detail": ""
     },
@@ -139,7 +139,7 @@
         "name": "Cama rectangular small con corderito azul y crema - Dogit",
         "price": 6958,
         "category": "Perros",
-        "stock": "10",
+        "stock": 10,
         "imgurl": "/img/products/product16.webp",
         "detail": ""
     },
@@ -148,7 +148,7 @@
         "name": "Cama rectangular mediana con corderito gris - Dogit",
         "price": 10956,
         "category": "Perros",
-        "stock": "8",
+        "stock": 8,
         "imgurl": "/img/products/product17.webp",
         "detail": ""
     },
@@ -157,7 +157,7 @@
         "name": "Bebedero automatico para Gato fuente flor 3L - Catit",
         "price": 10136,
         "category": "Gatos",
-        "stock": "21",
+        "stock": 21,
         "imgurl": "/img/products/product18.webp",
         "detail": ""
     },
@@ -166,7 +166,7 @@
         "name": "Tunel para Gato azul 68x97x28cm - Catit",
         "price": 8317,
         "category": "Gatos",
-        "stock": "15",
+        "stock": 15,
         "imgurl": "/img/products/product19.webp",
         "detail": ""
     },
@@ -175,7 +175,7 @@
         "name": "Alimentador automatico para Peces con pantalla LCD - Eheim",
         "price": 20119,
         "category": "Peces",
-        "stock": "7",
+        "stock": 7,
         "imgurl": "/img/products/product20.webp",
         "detail": ""
     },
@@ -184,7 +184,7 @@
         "name": "Filtro interno para pecera UIV 880 L/H - SOBO",
         "price": 20119,
         "category": "Peces",
-        "stock": "11",
+        "stock": 11,
         "imgurl": "/img/products/product21.webp",
         "detail": ""
     },
@@ -193,7 +193,7 @@
         "name": "Adorno para Pecera naufragio pirata 39x15x31cm",
         "price": 20592,
         "category": "Peces",
-        "stock": "3",
+        "stock": 3,
         "imgurl": "/img/products/product22.webp",
         "detail": ""
     },
@@ -202,7 +202,7 @@
         "name": "Alimento para Peces marinos Tetra Marine XL x 225gr",
         "price": 7315,
         "category": "Peces",
-        "stock": "32",
+        "stock": 32,
         "imgurl": "/img/products/product23.webp",
         "detail": ""
     },
@@ -211,7 +211,7 @@
         "name": "Rascador para Gato poste - Zootec",
         "price": 4309,
         "category": "Gatos",
-        "stock": "7",
+        "stock": 7,
         "imgurl": "/img/products/product24.webp",
         "detail": ""
     },
@@ -220,7 +220,7 @@
         "name": "Rascador para Gatos carton infinit",
         "price": 5128,
         "category": "Gatos",
-        "stock": "3",
+        "stock": 3,
         "imgurl": "/img/products/product25.webp",
         "detail": ""
     },
@@ -229,7 +229,7 @@
         "name": "Cucha mediana gris + almohadon - Eggys",
         "price": 18496,
         "category": "Perros",
-        "stock": "4",
+        "stock": 4,
         "imgurl": "/img/products/product26.webp",
         "detail": ""
     },
@@ -238,7 +238,7 @@
         "name": "Pechera perro arnes tela camuflada talle 6",
         "price": 6988,
         "category": "Perros",
-        "stock": "13",
+        "stock": 13,
         "imgurl": "/img/products/product27.webp",
         "detail": ""
     },
@@ -247,7 +247,7 @@
         "name": "Correa extensible L 5m - New Confort",
         "price": 8790,
         "category": "Perros",
-        "stock": "11",
+        "stock": 11,
         "imgurl": "/img/products/product28.webp",
         "detail": ""
     },
@@ -256,7 +256,7 @@
         "name": "Cuna ventana para Gato",
         "price": 10714,
         "category": "Gatos",
-        "stock": "8",
+        "stock": 8,
         "imgurl": "/img/products/product29.webp",
         "detail": ""
     },
@@ -265,7 +265,7 @@
         "name": "Comedero interactivo laberinto dispensador - Catit",
         "price": 7823,
         "category": "Gatos",
-        "stock": "9",
+        "stock": 9,
         "imgurl": "/img/products/product30.webp",
         "detail": ""
     }

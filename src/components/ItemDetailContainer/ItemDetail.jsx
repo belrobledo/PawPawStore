@@ -3,14 +3,10 @@ import './ItemDetail.css'
 import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom';
 
-export default function ItemDetail({product, onAddToCart}) {
+export default function ItemDetail({product, isInCart, onAddToCart}) {
   const {id, name, price, imgurl, detail, stock} = product;
-  const [countInCart, setCountInCart] = useState(0);
 
-  function handleAddToCart(count=-1){
-    console.log("agregamos", count)
-    setCountInCart(count);
-  }
+  console.log("isIncart:", isInCart);
 
   return (
     <div className="container my-1">
@@ -22,10 +18,10 @@ export default function ItemDetail({product, onAddToCart}) {
           <h4>{name}</h4>
           <h5><b>${price.toLocaleString()}</b></h5>
           <p>Stock: {stock}</p>
-          {countInCart === 0 ?
-            <ItemCount stock={stock} onAddToCart={handleAddToCart}/>
-          :
+          {isInCart ?
             <Link to="/cart">Ir al carrito</Link>
+          :
+            <ItemCount stock={stock} onAddToCart={onAddToCart}/>
           }
         </div>
       </div>

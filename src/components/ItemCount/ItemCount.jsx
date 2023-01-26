@@ -1,10 +1,10 @@
-//-----------------------------------------------------
-// COMPONENTE: Contador de Item. Suma/Resta una unidad.
-//-----------------------------------------------------
+//-----------------------------------------------------//
+// COMPONENTE: Contador de Item. Suma/Resta una unidad.//
+//-----------------------------------------------------//
 import React, { useState } from 'react'
 
 
-export default function ItemCount({stock = 0}, onAddToCart) {
+export default function ItemCount({stock = 0, onAddToCart}) {
     const [count, setCount] = useState(1);
     console.log(onAddToCart);
 

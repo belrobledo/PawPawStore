@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 
-import getAllProducts, { getProductsByCategory } from '../../services/mockService'
+import { getAllProducts, getProductsByCategory } from '../../services/firebase';
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
-import Card from "../Card/Card"
+import Card from "../Card/Card";
 import Loader from "../Loader/Loader";
 
 export default function ItemListContainer(){
