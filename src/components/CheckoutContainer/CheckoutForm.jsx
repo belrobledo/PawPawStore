@@ -1,68 +1,62 @@
-import React from 'react'
+import React, { useState } from 'react'
+import InputForm from './InputForm';
 
-export default function CheckoutForm() {
-  return (
-    <form>
-        <h4 className="mb-3">Datos del Envío</h4>
-        <div className="row g-3">
-            <div className="col-sm-6">
-                <label for="nombre" className="form-label">Nombre</label>
-                <input type="text" className="form-control" id="nombre" required />
-            </div>
-            <div className="col-sm-6">
-                <label for="apellido" className="form-label">Apellido</label>
-                <input type="text" className="form-control" id="apellido" required />
-            </div>
-            <div className="col-12">
-                <label for="email" className="form-label">Email</label>
-                <input type="email" className="form-control" id="email" placeholder="nombre@ejemplo.com" required />
-            </div>
-            <div className="col-9">
-                <label for="direccion" className="form-label">Dirección</label>
-                <input type="text" className="form-control" id="direccion" placeholder="Calle 123, Ciudad, Provincia" required />
-            </div>
-            <div className="col-md-3">
-                <label for="cp" className="form-label">Código Postal</label>
-                <input type="text" className="form-control" id="cp" required />
-            </div>
-        </div>
-        
-        <hr className="my-4" />
+export default function CheckoutForm({onCheckout}) {
+    const [userData, setUserData] = useState({      
+        name: "",
+        lastName: "",
+        email: "",
+        address: "",
+        cp: "",
+        paymentMethod: "debit"
+        //No guardo los datos de pago ya que solo es una simulacion
+    });
 
-        <h4 className="mb-3">Forma de Pago</h4>
-        <div className="my-3">
-            <div className="form-check">
-                <input id="credit" name="metodoPago" type="radio" className="form-check-input" defaultChecked required />
-                <label className="form-check-label" for="credit">Tarjeta de Crédito</label>
-            </div>
-            <div className="form-check">
-                <input id="debit" name="metodoPago" type="radio" className="form-check-input" required />
-                <label className="form-check-label" for="debit">Tarjeta de Débito</label>
-            </div>
-        </div>
-        <div className="row gy-3">
-            <div className="col-md-6">
-                <label for="cc-nombre" className="form-label">Nombre</label>
-                <input type="text" className="form-control" id="cc-nombre" required />
-                <small className="text-muted">Nombre como figura en la tarjeta</small>
-            </div>
-            <div className="col-md-6">
-                <label for="cc-numero" className="form-label">Número de la Tarjeta</label>
-                <input type="text" className="form-control" id="cc-numero" placeholder="xxxx-xxxx-xxxx-xxxx" required />
-            </div>
-            <div className="col-md-3">
-                <label for="cc-vencimiento" className="form-label">Vencimiento</label>
-                <input type="text" className="form-control" id="cc-vencimiento" placeholder="mm/aa" required />
-            </div>
-            <div className="col-md-3">
-                <label for="cc-cvv" className="form-label">CVV</label>
-                <input type="text" className="form-control" id="cc-cvv" placeholder="xxx" required />
-            </div>
-        </div>
+    function onInputChange(evt){
+        let value = evt.target.value;
+        let key = evt.target.name;
+    
+        let newState = { ...userData };
+        newState[key] = value;
+        setUserData(newState);
+    }
 
-        <hr className="my-4" />
+    function handleSubmit(evt){
+        evt.preventDefault();
+        onCheckout(userData);
+    }
 
-        <button className="w-100 btn btn-primary btn-lg" type="submit" id="botonPagar">Finalizar Compra</button>
-    </form>
-  )
+    return (
+        <form onSubmit={handleSubmit}>
+            <h4 className="mb-3">Datos del Envío</h4>
+            <div className="row g-3">
+                <InputForm divClass="col-sm-6" id="name" name="name" text="Nombre" type="text" onChange={onInputChange}/>
+                <InputForm divClass="col-sm-6" id="lastName" name="lastName" text="Apellido" type="text" onChange={onInputChange}/>
+                <InputForm divClass="col-12" id="email" name="email" text="Email" type="email" placeholder="nombre@ejemplo.com" onChange={onInputChange}/>
+                <InputForm divClass="col-9" id="address" name="address" text="Dirección" type="text" placeholder="Calle 123, Ciudad, Provincia" onChange={onInputChange}/>
+                <InputForm divClass="col-md-3" id="cp" name="cp" text="Código Postal" type="text" onChange={onInputChange}/>
+            </div>
+            
+            <hr className="my-4" />
+
+            <h4 className="mb-3">Forma de Pago</h4>
+            <div className="my-3">
+                <InputForm divClass="form-check" id="debit" name="paymentMethod" value="debit" text="Tarjeta de Débito" type="radio" defaultChecked="true" onChange={onInputChange}/>
+                <InputForm divClass="form-check" id="credit" name="paymentMethod" value="credit" text="Tarjeta de Crédito" type="radio" onChange={onInputChange}/>
+            </div>
+            <div className="row gy-3">
+                <div className="col-md-6">
+                    <InputForm id="cc-name" name="ccName" text="Nombre" type="text" />
+                    <small className="text-muted">Nombre como figura en la tarjeta</small>
+                </div>
+                <InputForm divClass="col-md-6" id="cc-number" name="ccNumber" text="Número de la Tarjeta" type="text" placeholder="xxxx-xxxx-xxxx-xxxx" />
+                <InputForm divClass="col-md-3" id="cc-expiration" name="ccExpiration" text="Vencimiento" type="text" placeholder="mm/aa" />
+                <InputForm divClass="col-md-3" id="cc-cvv" name="ccCvv" text="CVV" type="text" placeholder="xxx" />
+            </div>
+
+            <hr className="my-4" />
+
+            <button className="w-100 btn btn-primary btn-lg" type="submit">Finalizar Compra</button>
+        </form>
+    )
 }

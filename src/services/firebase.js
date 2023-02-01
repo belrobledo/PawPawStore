@@ -49,10 +49,18 @@ export async function getProduct(id){
 }
 
 export async function createOrder(order){ //for ticket
-    const orderRef = collection(db, "order");
+    const orderRef = collection(db, "orders");
 
     let response = await addDoc(orderRef, order);
     return response.id;
+}
+
+export async function getOrder(id){
+    const orderRef = collection(db, "orders");
+    const docRef = doc(orderRef, id)
+    const snapshot = await getDoc(docRef);
+
+    return { ...snapshot.data(), id: snapshot.id };
 }
 
 export async function exportArray(){ //execute one time to load db

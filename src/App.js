@@ -6,12 +6,14 @@ import { ToastContainer } from 'react-toastify';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
+import CheckoutContainer from './components/CheckoutContainer/CheckoutContainer';
+import OrderContainer from './components/OrderContainer.jsx/OrderContainer';
 
 import ErrorPage from './pages/ErrorPage';
 import LandingPage from './pages/LandingPage';
 
 import { CartProvider } from './storage/cartContext';
-import CheckoutContainer from './CheckoutContainer/CheckoutContainer';
+
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
             <Route path="/category/:categoryid" element={ <ItemListContainer/> } />
             <Route path="*" element={ <ErrorPage/> } />
             <Route path="/checkout" element={ <CheckoutContainer/> } />
+            <Route path="/order/:orderid" element={ <OrderContainer/> } />
           </Routes>
         </BrowserRouter>
       </CartProvider>
