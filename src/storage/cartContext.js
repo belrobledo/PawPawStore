@@ -8,18 +8,18 @@ function CartProvider(props) {
     function addToCart(product){
         let newCart = [...cart];
 
-        let index = cart.indexOf( element => element.id === product.id);
+        let index = cart.findIndex( element => element.id === product.id);
         (index !== -1) ? newCart[index].quantity += product.quantity : newCart.push(product);
 
         setCart(newCart);
     }
 
-    function removeFromCart(product, quantity){
+    function removeFromCart(id){
         let newCart = [...cart];
 
-        let index = cart.indexOf( element => element.id === product.id);
+        let index = newCart.findIndex( element => element.id === id);
         if(index !== -1){
-            (newCart[index].quantity > quantity) ? newCart[index].quantity -= quantity : newCart.splice(index, 1);
+            (newCart[index].quantity > 1) ? newCart[index].quantity-- : newCart.splice(index, 1);
             setCart(newCart);
         }
     }

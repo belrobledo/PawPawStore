@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { getProduct } from '../../services/firebase';
 import { cartContext } from '../../storage/cartContext';
 import BreadCrumb from '../BreadCrumb/BreadCrumb';
@@ -17,6 +18,7 @@ export default function ItemDetailContainer() {
     function handleAddToCart(count){
         setIsInCart(true);
         addToCart({...product, quantity: count});
+        toast.success(`"${product.name}" x ${count}u. agregado al carrito.`);
     }
 
     useEffect(() => {

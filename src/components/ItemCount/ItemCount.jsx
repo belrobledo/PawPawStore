@@ -6,7 +6,6 @@ import React, { useState } from 'react'
 
 export default function ItemCount({stock = 0, onAddToCart}) {
     const [count, setCount] = useState(1);
-    console.log(onAddToCart);
 
     function HandleAdd(event){
         if(count < stock){

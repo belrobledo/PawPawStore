@@ -36,6 +36,15 @@ export default function BreadCrumb({currentPage}) {
                     </ol>
                 </div>
             )
+        case 'Checkout':
+            return (
+                <div className='container pt-4 ps-5 pb-1'>
+                    <ol className="breadcrumb">
+                        <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                        <li className="breadcrumb-item active">Checkout</li>
+                    </ol>
+                </div>
+            )
         default:
             return(
                 <></>

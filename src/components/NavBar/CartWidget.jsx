@@ -25,7 +25,7 @@ export default function CartWidget(){
                 </Offcanvas.Header>
                 <Offcanvas.Body className="offcanvas-cart-bg">
                     {getTotalQuantity() > 0 ?
-                        <CartContainer/>
+                        <CartContainer handleClose={handleClose}/>
                     :
                         <p className="mx-4">El carrito está vacío.</p>
                     }
