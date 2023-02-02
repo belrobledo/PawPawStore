@@ -25,11 +25,12 @@ function App() {
           <NavBar/>
           <Routes>
             <Route path="/" element={ <LandingPage/> } />
-            <Route path="/detail/:id" element={ <ItemDetailContainer/> } />
             <Route path="/category/:categoryid" element={ <ItemListContainer/> } />
-            <Route path="*" element={ <ErrorPage/> } />
+            <Route path="/search/:searchvalue" element={ <ItemListContainer/> } />
+            <Route path="/detail/:id" element={ <ItemDetailContainer/> } />
             <Route path="/checkout" element={ <CheckoutContainer/> } />
             <Route path="/order/:orderid" element={ <OrderContainer/> } />
+            <Route path="*" element={ <ErrorPage/> } />
           </Routes>
         </BrowserRouter>
       </CartProvider>
