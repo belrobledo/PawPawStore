@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './ItemDetail.css'
-import ItemCount from '../ItemCount/ItemCount'
+import ItemCount from './ItemCount'
 import { Link } from 'react-router-dom';
 
 export default function ItemDetail({product, isInCart, onAddToCart}) {

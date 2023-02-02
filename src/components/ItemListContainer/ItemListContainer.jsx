@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 
 import { getAllProducts, getProductsByCategory, getProductsByName } from '../../services/firebase';
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
-import Card from "../Card/Card";
+import Card from "./Card";
 import Loader from "../Loader/Loader";
 
 export default function ItemListContainer(){
@@ -40,8 +40,8 @@ export default function ItemListContainer(){
         {loading ?
             <Loader/>
         :
-            <div>
-                <div className="container">
+            <div className="container">
+                <div className="row row-height">
                 {products.map((product) => <Card key={product.id} product={product}/>)}
                 </div>
             </div>
