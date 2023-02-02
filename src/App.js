@@ -26,7 +26,7 @@ function App() {
           <Routes>
             <Route path="/" element={ <LandingPage/> } />
             <Route path="/category/:categoryid" element={ <ItemListContainer/> } />
-            <Route path="/search/:searchvalue" element={ <ItemListContainer/> } />
+            <Route path="/search/:searchid" element={ <ItemListContainer/> } />
             <Route path="/detail/:id" element={ <ItemDetailContainer/> } />
             <Route path="/checkout" element={ <CheckoutContainer/> } />
             <Route path="/order/:orderid" element={ <OrderContainer/> } />

@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 
-import { getAllProducts, getProductsByCategory } from '../../services/firebase';
+import { getAllProducts, getProductsByCategory, getProductsByName } from '../../services/firebase';
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
 import Card from "../Card/Card";
 import Loader from "../Loader/Loader";
@@ -9,26 +9,33 @@ import Loader from "../Loader/Loader";
 export default function ItemListContainer(){
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
-    let {categoryid} = useParams();
+    let {categoryid, searchid} = useParams();
 
     useEffect(() => {
         setLoading(true);
-        if(categoryid === "All"){
-            getAllProducts().then((response) => {
+        if(searchid){
+            getProductsByName(searchid).then((response) => {
                 setProducts(response);
               }).catch((error) => alert(error)
               ).finally( () => setLoading(false));
         } else{
-            getProductsByCategory(categoryid).then((response) => {
-                setProducts(response);
-              }).catch((error) => alert(error)
-              ).finally( () => setLoading(false));
+            if(categoryid === "All"){
+                getAllProducts().then((response) => {
+                    setProducts(response);
+                  }).catch((error) => alert(error)
+                  ).finally( () => setLoading(false));
+            } else{
+                getProductsByCategory(categoryid).then((response) => {
+                    setProducts(response);
+                  }).catch((error) => alert(error)
+                  ).finally( () => setLoading(false));
+            }
         }
-    }, [categoryid]);
+    }, [categoryid, searchid]);
 
     return (
         <>
-        <BreadCrumb currentPage={categoryid}/>
+        <BreadCrumb currentPage={categoryid || "Búsqueda"}/>
 
         {loading ?
             <Loader/>

@@ -33,7 +33,7 @@ export default function ItemDetailContainer() {
 
     return (
         <>
-        <BreadCrumb currentPage="Detail" />
+        <BreadCrumb currentPage="Detalle" />
         {loading ?
             <Loader/>
         :

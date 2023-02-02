@@ -40,6 +40,22 @@ export async function getProductsByCategory(categoryid){
     return products;
 }
 
+//Como firebase solo tiene soporte para buscar por coincidencia 100%, decidi obtener toda la lista de productos y luego filtrar, aunque no sea lo mas eficiente.
+export async function getProductsByName(searchid){
+    const productsRef = collection(db, "products");
+    const snapshot = await getDocs(productsRef);
+
+    let products = snapshot.docs.map(element => {
+        let product = element.data();
+        product.id = element.id;
+        return product;
+    });
+
+    products = products.filter((el) => el.name.toLowerCase().includes(searchid.trim().toLowerCase()));
+
+    return products;
+}
+
 export async function getProduct(id){
     const productsRef = collection(db, "products");
     const docRef = doc(productsRef, id)
@@ -48,7 +64,7 @@ export async function getProduct(id){
     return { ...snapshot.data(), id: snapshot.id };
 }
 
-export async function createOrder(order){ //for ticket
+export async function createOrder(order){
     const orderRef = collection(db, "orders");
 
     let response = await addDoc(orderRef, order);

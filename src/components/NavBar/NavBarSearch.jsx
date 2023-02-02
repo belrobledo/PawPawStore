@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function NavBarSearch(){
-    const [userInput, setUserInput] = useState("f");
+    const [userInput, setUserInput] = useState("");
+    const navigateTo = useNavigate();
 
     function handleChange(evt){
         setUserInput(evt.target.value);
@@ -9,7 +11,7 @@ export default function NavBarSearch(){
 
     function handleSubmit(evt){
         evt.preventDefault();
-        console.log(userInput);
+        navigateTo(`/search/${userInput}`);
     }
 
     return(
