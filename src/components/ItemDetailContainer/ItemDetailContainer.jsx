@@ -8,12 +8,12 @@ import Loader from '../Loader/Loader';
 import ItemDetail from './ItemDetail';
 
 export default function ItemDetailContainer() {
+    let {id} = useParams();
+    const {addToCart, inCart} = useContext(cartContext);
+
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
     const [isInCart, setIsInCart] = useState(false);
-
-    let {id} = useParams();
-    const {addToCart} = useContext(cartContext);
 
     function handleAddToCart(count){
         setIsInCart(true);
@@ -29,7 +29,9 @@ export default function ItemDetailContainer() {
         }).catch((error) => {
             alert(error);
         }).finally( () => setLoading(false))
-    }, [id]);
+
+        setIsInCart(inCart(id));
+    }, [id, inCart(id)]);
 
     return (
         <>

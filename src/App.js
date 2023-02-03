@@ -19,7 +19,7 @@ import { CartProvider } from './storage/cartContext';
 function App() {
   return (
     <>
-      <ToastContainer />
+      <ToastContainer autoClose={2000} hideProgressBar/>
       <CartProvider>
         <BrowserRouter>
           <NavBar/>

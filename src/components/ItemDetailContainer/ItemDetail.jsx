@@ -19,7 +19,7 @@ export default function ItemDetail({product, isInCart, onAddToCart}) {
           <h5><b>${price.toLocaleString()}</b></h5>
           <p>Stock: {stock}</p>
           {isInCart ?
-            <Link to="/cart">Ir al carrito</Link>
+            <p className='alert alert-secondary mx-auto' style={{"width" : "fit-content"}}>El producto ya se encuentra en el Carrito</p>
           :
             <ItemCount stock={stock} onAddToCart={onAddToCart}/>
           }

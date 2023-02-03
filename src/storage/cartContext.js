@@ -24,6 +24,13 @@ function CartProvider(props) {
         }
     }
 
+    function inCart(id){
+        let index = cart.findIndex( element => element.id === id);
+        let state = (index !== -1) ? true : false;
+
+        return state;
+    }
+
     function clearCart(){
         setCart([]);
     }
@@ -47,7 +54,7 @@ function CartProvider(props) {
     }
 
     return(
-        <cartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, getTotalQuantity, getTotalPrice }}>
+        <cartContext.Provider value={{ cart, addToCart, removeFromCart, inCart, clearCart, getTotalQuantity, getTotalPrice }}>
             {props.children}
         </cartContext.Provider>
     )
