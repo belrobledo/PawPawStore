@@ -1,0 +1,9 @@
+.no-style{
+    color: unset;
+    text-decoration: none;
+}
+
+.no-style:hover{
+    color: unset;
+    text-decoration: none;
+}
