@@ -40,10 +40,8 @@ export default function ItemListContainer(){
         {loading ?
             <Loader/>
         :
-            <div className="container">
-                <div className="row row-height">
+            <div className=" container d-flex flex-wrap justify-content-center">
                 {products.map((product) => <Card key={product.id} product={product}/>)}
-                </div>
             </div>
         }
         </>
