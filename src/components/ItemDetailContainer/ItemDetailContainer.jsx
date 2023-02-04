@@ -23,9 +23,7 @@ export default function ItemDetailContainer() {
 
     useEffect(() => {
         getProduct(id).then((response) => {
-            console.log("response:", response);
             setProduct(response);
-            console.log("product:", product);
         }).catch((error) => {
             alert(error);
         }).finally( () => setLoading(false))

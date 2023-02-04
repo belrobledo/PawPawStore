@@ -7,8 +7,6 @@ export default function ItemDetail({product, isInCart, onAddToCart}) {
   const {id, name, price, imgurl, detail, stock} = product;
   const navigateTo = useNavigate();
 
-  console.log("isIncart:", isInCart);
-
   useEffect(() => {
     !name && navigateTo("*");
 }, [name]);

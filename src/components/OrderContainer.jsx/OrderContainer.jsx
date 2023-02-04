@@ -12,9 +12,7 @@ export default function OrderContainer() {
 
   useEffect(() => {
     getOrder(orderid).then((response) => {
-        console.log("response:", response);
         setOrder(response);
-        console.log("order:", order);
     }).catch((error) => {
         alert(error);
     }).finally( () => setLoading(false))
