@@ -47,7 +47,7 @@ Step by step instructions:
 
 
 
-[![Belen Robledo](https://avatars.githubusercontent.com/u/106560013?v=4&s=144)](https://github.com/belrobledo)  | 
+[![Belen Robledo](https://avatars.githubusercontent.com/u/106560013?v=4&s=144)](https://github.com/belrobledo)  | [![Quandl.com](https://github.com/iharsh234/WebApp/blob/master/images/quandl.jpg)](https://www.quandl.com/)
 ---|---
-[Belen Robledo ](https://github.com/iharsh234) |
+[Belen Robledo ](https://github.com/iharsh234) |[Quandl](https://www.quandl.com)
 
