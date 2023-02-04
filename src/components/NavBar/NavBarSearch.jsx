@@ -16,7 +16,7 @@ export default function NavBarSearch(){
 
     return(
         <form className="opacity-75" role="search" onSubmit={handleSubmit}>
-            <input className="form-control rounded-pill" type="search" name="userInput" value={userInput} placeholder="Buscar Productos" onChange={handleChange}/>
+            <input className="form-control rounded-pill" type="search" name="userInput" value={userInput} placeholder="Buscar Producto" onChange={handleChange}/>
         </form>
     );
 }
