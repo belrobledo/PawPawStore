@@ -1,4 +1,4 @@
-# PawPaw Store ✨
+# PawPaw Store 😺🐶🐱🐾
 
 Web App - Ecommerce: Pet Shop - [pawpawstore.netlify.app](https://pawpawstore.netlify.app/)
 
@@ -32,7 +32,7 @@ Step by step instructions:
 
     npm start
 
-## Built With
+## Built With 💻
 
   - [React JS](https://reactjs.org/) - JavaScript library used to create the site.
   - [Firebase](https://creativecommons.org/) - Used to persist data on Firestore, a serverless NoSQL database.
