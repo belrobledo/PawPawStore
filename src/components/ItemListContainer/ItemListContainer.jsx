@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { getAllProducts, getProductsByCategory, getProductsByName } from '../../services/firebase';
 import BreadCrumb from "../BreadCrumb/BreadCrumb";
@@ -39,10 +39,19 @@ export default function ItemListContainer(){
 
         {loading ?
             <Loader/>
-        :
-            <div className=" container d-flex flex-wrap justify-content-center">
-                {products.map((product) => <Card key={product.id} product={product}/>)}
-            </div>
+        :   
+            <>
+            {(products.length !== 0) ?
+                <div className="container d-flex flex-wrap justify-content-center">
+                    {products.map((product) => <Card key={product.id} product={product}/>)}
+                </div>
+            :
+                <div className="container text-center">
+                    <p className="m-4">No hay productos para mostrar</p>
+                    <Link to="/category/All" className="mx-auto my-5"><button className="btn btn-primary">Ver todos</button></Link>
+                </div>
+            }
+            </>
         }
         </>
     );

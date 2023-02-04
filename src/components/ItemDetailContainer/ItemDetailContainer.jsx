@@ -38,7 +38,7 @@ export default function ItemDetailContainer() {
         <BreadCrumb currentPage="Detalle" />
         {loading ?
             <Loader/>
-        :
+        :   
             <ItemDetail product={product} isInCart={isInCart} onAddToCart={handleAddToCart}/>
         }
         </>

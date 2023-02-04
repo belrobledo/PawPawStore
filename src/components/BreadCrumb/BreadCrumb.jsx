@@ -30,6 +30,7 @@ export default function BreadCrumb({currentPage}) {
             )
         case 'Checkout':
         case 'Orden':
+        default:
             return (
                 <div className='container pt-4 ps-5 pb-1'>
                     <ol className="breadcrumb">
@@ -37,11 +38,6 @@ export default function BreadCrumb({currentPage}) {
                         <li className="breadcrumb-item active">{currentPage}</li>
                     </ol>
                 </div>
-            )
-        
-        default:
-            return(
-                <></>
             )
     }
 }
