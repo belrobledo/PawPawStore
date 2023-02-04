@@ -42,7 +42,7 @@ export default function ItemListContainer(){
         :   
             <>
             {(products.length !== 0) ?
-                <div className="container d-flex flex-wrap justify-content-center">
+                <div className="container d-flex flex-wrap justify-content-center mb-4">
                     {products.map((product) => <Card key={product.id} product={product}/>)}
                 </div>
             :
