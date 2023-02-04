@@ -5,6 +5,7 @@ Web App - Ecommerce: Pet Shop - [pawpawstore.netlify.app](https://pawpawstore.ne
 Final project done for "React JS" course at CoderHouse.
 
 ![Landing Page](https://i.imgur.com/Dlrcbgw.png)
+![Products and Cart](https://i.imgur.com/8QTEvse.png)
 
 ## Demo
 
