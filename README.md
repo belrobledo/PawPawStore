@@ -4,9 +4,11 @@ Web App - Ecommerce: Pet Shop.
 
 Final project done for "React JS" course at CoderHouse.
 
+![Landing Page](https://i.imgur.com/Dlrcbgw.png)
+
 ## Demo
 
-You can visualize the app online or clone the repository. Cloning will give you a copy of the project up and running on
+You can visualize and test the app online or clone the repository. Cloning will give you a copy of the project up and running on
 your local machine for development and testing purposes.
 
 ### Online
@@ -17,15 +19,15 @@ your local machine for development and testing purposes.
 
 Step by step instructions:
 
-Clone the repo
+1- Clone the repo
 
     git clone https://github.com/belrobledo/PawPawStore-ReactJS.git
 
-Install NPM packages
+2- Install NPM packages
 
     npm install
 
-Start the application. You will then be able to access it at localhost:3000
+3- Start the application. You will then be able to access it at localhost:3000
 
     npm start
 
@@ -38,4 +40,6 @@ Start the application. You will then be able to access it at localhost:3000
 
 ## Author
 
-  - [Belen Robledo](https://github.com/belrobledo)
+  [![Belen Robledo](https://avatars.githubusercontent.com/u/106560013?v=4&s=144)](https://github.com/belrobledo)
+---
+[Belen Robledo](https://github.com/iharsh234)
