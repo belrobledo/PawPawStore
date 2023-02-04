@@ -12,11 +12,11 @@ Final project done for "React JS" course at CoderHouse.
 You can visualize and test the app online or clone the repository. Cloning will give you a copy of the project up and running on
 your local machine for development and testing purposes.
 
-### 🔹🔸◻ Online
+### ◻ Online
 
 - [PawPaw Store Website](https://pawpawstore.netlify.app/)
 
-### ▶ Clone the repository
+### ◻ Clone the repository
 
 Step by step instructions:
 
