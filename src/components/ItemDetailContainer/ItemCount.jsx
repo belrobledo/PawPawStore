@@ -17,11 +17,17 @@ export default function ItemCount({stock = 0, onAddToCart}) {
     }
 
     return (
-        <div className="d-flex justify-content-center">
-            <button className="btn btn-outline-dark btn-sm m-1" onClick={HandleSubstract} disabled={count<=1}>-</button>
-            <p className="p-1">{count}</p>
-            <button className="btn btn-outline-dark btn-sm m-1" onClick={HandleAdd} disabled={count>=stock}>+</button>
-            <button className="btn btn-outline-dark m-1" onClick={ () => onAddToCart(count)}>Agregar al Carrito</button>
+        <>
+        <div className="d-flex justify-content-center align-items-stretch mt-4">
+            <div className="btn-group">
+                <button className="btn btn-outline-dark" type="button" onClick={HandleSubstract} disabled={count<=1}>-</button>
+                <p className="fs-5 px-3 py-1 my-auto border border-dark border-start-0">{count}</p>
+                <button className="btn btn-outline-dark" type="button" onClick={HandleAdd} disabled={count>=stock}>+</button>
+            </div>
         </div>
+        <div>
+            <button className="btn btn-primary border border-dark m-2" onClick={ () => onAddToCart(count)}>Agregar al Carrito</button>
+        </div>
+        </>
     )
 }

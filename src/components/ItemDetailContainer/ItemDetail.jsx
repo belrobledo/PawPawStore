@@ -24,7 +24,7 @@ export default function ItemDetail({product, isInCart, onAddToCart}) {
             <div className='col-sm-12 col-md-7 text-center my-4'>
               <h4>{name}</h4>
               <h5><b>${price.toLocaleString()}</b></h5>
-              <p>Stock: {stock}</p>
+              <p className='text-muted'>Stock: {stock}</p>
               {isInCart ?
                 <p className='alert alert-secondary mx-auto' style={{"width" : "fit-content"}}>El producto ya se encuentra en el Carrito</p>
               :
