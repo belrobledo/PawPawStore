@@ -1,4 +1,4 @@
-# PawPaw Store
+# PawPaw Store ✨
 
 Web App - Ecommerce: Pet Shop - [pawpawstore.netlify.app](https://pawpawstore.netlify.app/)
 
@@ -7,16 +7,16 @@ Final project done for "React JS" course at CoderHouse.
 ![Landing Page](https://i.imgur.com/Dlrcbgw.png)
 ![Products and Cart](https://i.imgur.com/8QTEvse.png)
 
-## Demo
+## Demo ✨
 
 You can visualize and test the app online or clone the repository. Cloning will give you a copy of the project up and running on
 your local machine for development and testing purposes.
 
-### Online
+### ▶ Online
 
 - [PawPaw Store Website](https://pawpawstore.netlify.app/)
 
-### Clone the repository
+### ▶ Clone the repository
 
 Step by step instructions:
 
