@@ -1,6 +1,6 @@
 # PawPaw Store
 
-Web App - Ecommerce: Pet Shop - [PawPaw Store Website](https://pawpawstore.netlify.app/)
+Web App - Ecommerce: Pet Shop - [pawpawstore.netlify.app](https://pawpawstore.netlify.app/)
 
 Final project done for "React JS" course at CoderHouse.
 
