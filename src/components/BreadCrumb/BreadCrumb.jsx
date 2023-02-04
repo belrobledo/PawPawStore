@@ -4,7 +4,7 @@ import "./breadCrumb.css"
 
 export default function BreadCrumb({currentPage}) {
 
-    switch(currentPage){ //fallthrough
+    switch(currentPage){ // fallthrough switch
         case 'All':
             return (
                 <div className='container pt-4 ps-5 pb-1'>

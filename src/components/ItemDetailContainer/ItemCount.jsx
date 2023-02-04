@@ -1,6 +1,3 @@
-//-----------------------------------------------------//
-// COMPONENTE: Contador de Item. Suma/Resta una unidad.//
-//-----------------------------------------------------//
 import React, { useState } from 'react'
 
 
