@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function InputForm({divClass="", id, name, value, text, placeholder="", type, defaultChecked = false, onChange}) {
+export default function InputForm({divClass="", id, name, value, text, placeholder="", type, pattern="[a-zA-Z0-9,. ]+", defaultChecked = false, onChange}) {
     return (
         <div className={divClass}>
             <label htmlFor={id} className={type === "radio" ? "form-check-label" : "form-label"}>{text}</label>
@@ -11,6 +11,7 @@ export default function InputForm({divClass="", id, name, value, text, placehold
                 className={type === "radio" ? "form-check-input" : "form-control"} 
                 placeholder={placeholder} 
                 id={id} 
+                pattern={pattern} 
                 defaultChecked={defaultChecked} 
                 onChange={onChange}
                 required
